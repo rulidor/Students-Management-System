@@ -7,7 +7,7 @@
 
 
 // returns: 1 if ok; 0 if bad username or pass; 2 if error opening users.txt file
-int check_credentials(char username[20], char pass[20]){
+int check_credentials(char *username, char *pass){
     FILE *filePointer;
     char curr_username[20];
     char curr_pass[20];
@@ -26,7 +26,7 @@ int check_credentials(char username[20], char pass[20]){
 }
 
 // returns: 1 if ok; 0 username already exists; 2 if error opening users.txt file
-int register_user(char username[20], char pass[20]){
+int register_user(char *username, char *pass){
     FILE *filePointer;
     char curr_username[20];
     char curr_pass[20];

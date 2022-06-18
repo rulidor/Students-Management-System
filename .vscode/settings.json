@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "users.h": "c"
-    }
+        "users.h": "c",
+        "types.h": "c",
+        "grades.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }
