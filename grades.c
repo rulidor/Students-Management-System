@@ -31,6 +31,23 @@ int add_grade(char *username, char* course_name, double grade){
     return 1;
 }
 
+// returns 1 if successfull; else returns 0
+int delete_grades_data(char *username){
+    FILE *filePointer;
+    char path[200];
+    strcpy(path, GRADES_PATH);
+    strcat(path, username);
+    strcat(path, "_grades.txt");
+
+    filePointer = fopen(path, "w");
+    if ( filePointer == NULL )
+    {
+        return 0;
+    }
+    fclose(filePointer);
+    return 1;
+}
+
 struct grades* get_all_grades(char *username){
     struct grades* student_grades = (struct grades*)malloc(sizeof(struct grades));
     (*student_grades).len = 0;

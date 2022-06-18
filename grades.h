@@ -5,6 +5,7 @@
 
 int add_grade(char *username, char* course_name, double grade);
 struct grades* get_all_grades(char *username);
+int delete_grades_data(char *username);
 
 struct gradeInCourse {
   char course_name[20];

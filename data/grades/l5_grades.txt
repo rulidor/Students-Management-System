@@ -1,3 +1,5 @@
 algo	90.000000
 csIntro	87.300000
 l	70.000000
+databases	100.0
+infi2	88.0
