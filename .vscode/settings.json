@@ -2,7 +2,8 @@
     "files.associations": {
         "users.h": "c",
         "types.h": "c",
-        "grades.h": "c"
+        "grades.h": "c",
+        "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

@@ -138,6 +138,7 @@ void logged_in_menu(char *username){
     }
 }
 
+// comparing 2 grades
 int comp (const void * elem1, const void * elem2) 
 {
     double grade_f = ((struct gradeInCourse*)elem1)->grade;
